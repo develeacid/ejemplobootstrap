@@ -25,143 +25,145 @@
     </head>
     <body>
         <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
         <!-- Spinner End -->
-    
-    
+
         <!-- Topbar Start -->
-        <div class="container-fluid py-2 d-none d-lg-flex">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                        <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Sat 09am-5pm, Sun Closed</small>
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
                     </div>
-                    <nav class="breadcrumb mb-0">
-                        <a class="breadcrumb-item small text-body" href="#">Career</a>
-                        <a class="breadcrumb-item small text-body" href="#">Support</a>
-                        <a class="breadcrumb-item small text-body" href="#">Terms</a>
-                        <a class="breadcrumb-item small text-body" href="#">FAQs</a>
-                    </nav>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Topbar End -->
-    
-    
-        <!-- Brand Start -->
-        <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
-            <div class="container pb-2">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex">
-                        <i class="bi bi-telephone-inbound fs-2"></i>
-                        <div class="ms-3">
-                            <h5 class="text-white mb-0">Call Now</h5>
-                            <span>+012 345 6789</span>
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="packages.html" class="nav-item nav-link">Packages</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="destination.html" class="dropdown-item">Destination</a>
+                                <a href="tour.html" class="dropdown-item">Explore Tour</a>
+                                <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
+                                <a href="guides.html" class="dropdown-item">Travel Guides</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
                         </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="index.html" class="h1 text-white mb-0">Lab<span class="text-dark">sky</span></a>
-                    <div class="d-flex">
-                        <i class="bi bi-envelope fs-2"></i>
-                        <div class="ms-3">
-                            <h5 class="text-white mb-0">Mail Now</h5>
-                            <span>info@example.com</span>
-                        </div>
-                    </div>
+                    <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
                 </div>
-            </div>
-        </div>
-        <!-- Brand End -->
-    
-    
-        <!-- Navbar Start -->
-        <div class="container-fluid sticky-top">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
-                    <a href="index.html" class="navbar-brand d-lg-none">
-                        <h1 class="text-primary m-0">Lab<span class="text-dark">sky</span></h1>
-                    </a>
-                    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="carousel-header">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Let's The World Together!</h1>
+                                    <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Discover Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">Find Your Perfect Tour At Travel</h1>
+                                    <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Discover Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
+                            <div class="carousel-caption">
+                                <div class="p-3" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4">You Like To Go?</h1>
+                                    <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#">Discover Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu bg-light m-0">
-                                    <a href="feature.html" class="dropdown-item">Features</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="appoinment.html" class="dropdown-item">Appoinment</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                        <div class="ms-auto d-none d-lg-flex">
-                            <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar End -->
-    
-    
-        <!-- Carousel Start -->
-        <div class="container-fluid header-carousel px-0 mb-5">
-            <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-start">
-                                    <div class="col-lg-7 text-start">
-                                        <h1 class="display-1 text-white animated slideInRight mb-3">Award Winning Laboratory Center</h1>
-                                        <p class="mb-5 animated slideInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.</p>
-                                        <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-end">
-                                    <div class="col-lg-7 text-end">
-                                        <h1 class="display-1 text-white animated slideInLeft mb-3">Expet Doctors & Lab Assistants</h1>
-                                        <p class="mb-5 animated slideInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.</p>
-                                        <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Explore More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+            <!-- Carousel End -->
         </div>
-        <!-- Carousel End -->
+        <!-- Navbar & Hero End -->
     
     
         <!-- About Start -->
@@ -182,7 +184,7 @@
                             <div class="col-6">
                                 <div class="bg-primary w-100 h-100 mt-n5 ms-n5 d-flex flex-column align-items-center justify-content-center">
                                     <div class="icon-box-light">
-                                        <i class="bi bi-award text-dark"></i>
+                                        <i class="bi bi-award text-secondary"></i>
                                     </div>
                                     <h1 class="display-1 text-white mb-0" data-toggle="counter-up">25</h1>
                                     <small class="fs-5 text-white">Years Experience</small>
@@ -227,7 +229,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
                         <div class="feature-item border h-100 p-5">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-award text-dark"></i>
+                                <i class="bi bi-award text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Award Winning</h5>
                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -236,7 +238,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                         <div class="feature-item border h-100 p-5">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-people text-dark"></i>
+                                <i class="bi bi-people text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Expet Doctors</h5>
                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -245,7 +247,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                         <div class="feature-item border h-100 p-5">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-cash-coin text-dark"></i>
+                                <i class="bi bi-cash-coin text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Fair Prices</h5>
                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -254,7 +256,7 @@
                     <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                         <div class="feature-item border h-100 p-5">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-headphones text-dark"></i>
+                                <i class="bi bi-headphones text-secondary"></i>
                             </div>
                             <h5 class="mb-3">24/7 Support</h5>
                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -277,14 +279,14 @@
                             <div class="row g-5 pt-2 mb-5">
                                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="icon-box-primary mb-4">
-                                        <i class="bi bi-person-plus text-dark"></i>
+                                        <i class="bi bi-person-plus text-secondary"></i>
                                     </div>
                                     <h5 class="mb-3">Experience Doctors</h5>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                                 </div>
                                 <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                                     <div class="icon-box-primary mb-4">
-                                        <i class="bi bi-check-all text-dark"></i>
+                                        <i class="bi bi-check-all text-secondary"></i>
                                     </div>
                                     <h5 class="mb-3">Advanced Microscopy</h5>
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
@@ -375,7 +377,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-heart-pulse text-dark"></i>
+                                <i class="bi bi-heart-pulse text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Pathology Testing</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -385,7 +387,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-lungs text-dark"></i>
+                                <i class="bi bi-lungs text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Microbiology Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -395,7 +397,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-virus text-dark"></i>
+                                <i class="bi bi-virus text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Biochemistry Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -405,7 +407,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-capsule-pill text-dark"></i>
+                                <i class="bi bi-capsule-pill text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Histopatology Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -415,7 +417,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-capsule text-dark"></i>
+                                <i class="bi bi-capsule text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Urine Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -425,7 +427,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-prescription2 text-dark"></i>
+                                <i class="bi bi-prescription2 text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Blood Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -435,7 +437,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-clipboard2-pulse text-dark"></i>
+                                <i class="bi bi-clipboard2-pulse text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Fever Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -445,7 +447,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item">
                             <div class="icon-box-primary mb-4">
-                                <i class="bi bi-file-medical text-dark"></i>
+                                <i class="bi bi-file-medical text-secondary"></i>
                             </div>
                             <h5 class="mb-3">Allergy Tests</h4>
                                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
@@ -468,7 +470,7 @@
                         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
                         <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
                             <div class="icon-box-primary">
-                                <i class="bi bi-geo-alt text-dark fs-1"></i>
+                                <i class="bi bi-geo-alt text-secondary fs-1"></i>
                             </div>
                             <div class="ms-3">
                                 <h5>Office Address</h5>
@@ -478,7 +480,7 @@
                         <hr>
                         <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.4s">
                             <div class="icon-box-primary">
-                                <i class="bi bi-clock text-dark fs-1"></i>
+                                <i class="bi bi-clock text-secondary fs-1"></i>
                             </div>
                             <div class="ms-3">
                                 <h5>Office Time</h5>
@@ -647,7 +649,7 @@
                             <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.1s">
                                 <div class="testimonial-item">
                                     <div class="icon-box-primary mb-4">
-                                        <i class="bi bi-chat-left-quote text-dark"></i>
+                                        <i class="bi bi-chat-left-quote text-secondary"></i>
                                     </div>
                                     <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
                                     <div class="d-flex align-items-center">
@@ -660,7 +662,7 @@
                                 </div>
                                 <div class="testimonial-item">
                                     <div class="icon-box-primary mb-4">
-                                        <i class="bi bi-chat-left-quote text-dark"></i>
+                                        <i class="bi bi-chat-left-quote text-secondary"></i>
                                     </div>
                                     <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.</p>
                                     <div class="d-flex align-items-center">
