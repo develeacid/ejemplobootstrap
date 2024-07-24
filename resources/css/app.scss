@@ -220,7 +220,7 @@
 
 .page-header {
     background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
-        url(../img/testimonial.jpg) center center no-repeat;
+        url("/img/testimonial.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -237,7 +237,7 @@
 /*** Features ***/
 .feature {
     background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
-        url(../img/feature.jpg) left center no-repeat;
+        url("/img/feature.jpg") left center no-repeat;
     background-size: cover;
 }
 
@@ -546,7 +546,7 @@
 /*** Footer ***/
 .footer {
     background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
-        url(../img/footer.png) center center no-repeat;
+        url("/img/footer.png") center center no-repeat;
     background-size: contain;
 }
 
