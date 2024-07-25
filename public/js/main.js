@@ -22,6 +22,19 @@
             $(".navbar").removeClass("sticky-top shadow-sm");
         }
     });
+    $(window).scroll(function () {
+        //mostar el menu de iniciar sesion
+        const navbar = $(".navbar");
+        const loginLink = $(".nav-item.nav-link:contains('Iniciar Sesión')"); // Selecciona el enlace de inicio de sesión
+
+        if ($(this).scrollTop() > 45) {
+            navbar.addClass("sticky-top shadow-sm");
+            loginLink.removeClass("d-lg-none"); // Muestra el enlace
+        } else {
+            navbar.removeClass("sticky-top shadow-sm");
+            loginLink.addClass("d-lg-none"); // Oculta el enlace
+        }
+    });
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
